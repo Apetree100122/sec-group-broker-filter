@@ -1,10 +1,8 @@
 @startuml
-
 Cloud_Controller -> Sec_Group_Broker_Filter: calls Service Broker API (catalog/provision)
 activate Sec_Group_Broker_Filter
 Sec_Group_Broker_Filter -> Mysql_Broker: calls Service Broker API: (catalog/provision)
 deactivate Sec_Group_Broker_Filter
-
 Cloud_Controller -> Sec_Group_Broker_Filter: calls Service Broker API (bind)
 'activate Sec_Group_Broker_Filter
 activate Sec_Group_Broker_Filter
