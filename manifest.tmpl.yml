@@ -1,24 +1,33 @@
 ---
 applications:
-- name: <broker_app_name>
+name: 
+<broker_app_name>
   instances: 1
   memory: 256M
-  host: <broker_hostname>
-  domain: <my-admin-domain.cf.io>
-  path: sec-group-broker-filter-<LATEST_RELEASE_VERSION>.jar
+  host: 
+  <broker_hostname>
+  domain: 
+  <my-admin-domain.cf.io>
+  path:
+  sec-group-broker-filter-<LATEST_RELEASE_VERSION>.jar
   env:
-    # Where to send received traffic
-    BROKER_FILTER_URL: <broker_url>
-    # basic auth credentials to use while sending traffic
-    BROKER_FILTER_USER: <broker_user>
-    BROKER_FILTER_PASSWORD: <broker_password>
-    #avoid service offering conflict.
-    #add suffix to exiting service offering so that filter broker offering and target broker offering can exit at the same time
-    #BROKER_FILTER_SERVICEOFFERING_SUFFIX=-sec
+    Where to send received traffic
+    BROKER_FILTER_URL: 
+    <broker_url>
+    basic auth credentials to use while sending traffic
+    BROKER_FILTER_USER:
+    <broker_user>
+    BROKER_FILTER_PASSWORD:
+    <broker_password>
+    avoid service offering conflict.
+    add suffix to exiting service offering so that filter broker offering and target broker offering can exit at the same time
+    BROKER_FILTER_SERVICEOFFERING_SUFFIX=-sec
    
-    # CloudFoundry CC api host
-    CLOUDFOUNDRY_HOST: <cc_api_host>
-    # CloudFoudry user with Org admin privileges on orgs where services will be bound
-    CLOUDFOUNDRY_USER: <cloudfoundry_user>
-    # CloudFoudry user password
-    CLOUDFOUNDRY_PASSWORD: <cloudfoundry_password>
+
+    CLOUDFOUNDRY_HOST: 
+    <cc_api_host>
+    CloudFoudry Org admin privileges on orgs where services will be bound
+    CLOUDFOUNDRY_USER:
+    <cloudfoundry_user>
+    CLOUDFOUNDRY_PASSWORD:
+    <cloudfoundry_password>
